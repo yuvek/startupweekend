@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zig it !</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tag">TagActivity</string>
+    <string name="title_activity_friend">FriendActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+
+    <!--<string-array name="ListItem">
+        <item>Gautam</item>
+        <item>Arnold</item>
+        <item>Yuva</item>
+        <item>Melinda</item>
+        <item>Pranjali</item>
+    </string-array>-->
+
+    <string name="title_activity_browse">BrowseActivity</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+
+</resources>

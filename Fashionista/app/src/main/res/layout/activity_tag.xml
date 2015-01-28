@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.yumehta.fashionista.TagActivity"
+    android:background="@drawable/tagbackground">
+
+    <TextView android:text="Tag your Zig!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ffff5fa8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Private"
+        android:id="@+id/privatebutton"
+        android:clickable="true"
+        android:onClick="sendClick"
+        android:layout_alignTop="@+id/publicbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Public"
+        android:id="@+id/publicbutton"
+        android:layout_marginBottom="44dp"
+        android:clickable="true"
+        android:onClick="sendClick"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/toggleButton2"
+        android:layout_toEndOf="@+id/toggleButton2" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beach"
+        android:id="@+id/toggleButton2"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="tagClick"
+        android:textOn="Beach"
+        android:textOff="Beach"
+        android:layout_marginTop="25dp"
+        android:width="100dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interview"
+        android:id="@+id/toggleButton3"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="tagClick"
+        android:textOn="Interview"
+        android:textOff="Interview"
+        android:width="100dp"
+        android:layout_alignTop="@+id/toggleButton2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prom"
+        android:id="@+id/toggleButton5"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="tagClick"
+        android:textOn="Prom"
+        android:textOff="Prom"
+        android:width="10dp"
+        android:layout_alignTop="@+id/toggleButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+</RelativeLayout>
